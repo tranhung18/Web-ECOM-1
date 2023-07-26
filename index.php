@@ -232,7 +232,7 @@
     </header>
 
     <div id="container">
-        <div style='margin-top:35px;'class="container__img">
+        <div style='margin-top:35px;'class="container-img">
             <img src="./assets/img/img-index/pic-1.jpg" alt="background">
             <img src="./assets/img/img-index/pic-3.jpg" alt="background">
         </div>
@@ -276,7 +276,7 @@
                 </div>
             </div>
             <div class="container__content--item content__bottom col-12">
-                <div class="content__bottom--img col-6">
+                <div class="content-bottom-img col-6">
                     <img src="./assets/img/img-index/kim.jpg" alt="Ảnh">
                     <img src="./assets/img/img-index/moc.jpg" alt="Ảnh">
                     <img src="./assets/img/img-index/tho.jpg" alt="Ảnh">

@@ -47,7 +47,7 @@
     <div id="container">
         <div class="container_top">
             <div class="container_top-section col-5">
-                <div class="img_product col-12">
+                <div class="img-product col-12">
                     <?php
                         echo "<img src='../assets/img/img-sp/{$rowInfoPage_product['image']}' alt='' >";
                         echo "<img src='../assets/img/img-sp/{$rowInfoPage_product['image']}' alt='' >";

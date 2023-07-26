@@ -21,10 +21,10 @@ select, button{
 .container_top-aside{
     margin: auto 0;
 }
-.img_product{
+.img-product{
     display: flex;
 }
-.img_product img{
+.img-product img{
     width: 85%;
     height: 450px;
     border-radius: 5px;

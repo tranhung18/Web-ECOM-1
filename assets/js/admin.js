@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded",function(){
-    // Function checkMeterPass
     function checkPass(password){
         var count = 0;
         if(password.length > 6 ){
@@ -19,45 +18,44 @@ document.addEventListener("DOMContentLoaded",function(){
         }
         return count;
     }
-    // Check change Password
     function checkChangePass(){
         document.querySelector('.btn_changePass').disabled = true;
         var meter_pass = document.querySelector('.meter');
-        const input_passOld = document.querySelector('.input_passOld');
-        const input_passNews = document.querySelector('.input_passNews');
-        const input_rePassNews = document.querySelector('.input_re-passNews');
-        const notification_passOld = document.querySelector('.span_checkPass');
-        const notification_passNews = document.querySelector('.span_passNews');
-        const notification_rePassNews = document.querySelector('.span_re-passNews');
+        const inputPassOld = document.querySelector('.input-pass-old');
+        const inputPassNew = document.querySelector('.input-pass-news');
+        const inputRePassNews = document.querySelector('.input-repass-news');
+        const notifyPassOld = document.querySelector('.span-check-pass');
+        const notifyPassNews = document.querySelector('.span-pass-news');
+        const notifyRePassNews = document.querySelector('.span-repass-news');
         
         function check_rePass(){
-            if(input_rePassNews.value != input_passNews.value){
-                notification_rePassNews.innerHTML = 'Mật khẩu nhập vào không khớp';
+            if(inputRePassNews.value != inputPassNew.value){
+                notifyRePassNews.innerHTML = 'Mật khẩu nhập vào không khớp';
             }else{
-                notification_rePassNews.innerHTML = '';
+                notifyRePassNews.innerHTML = '';
             }
         }
-        input_passOld.onchange= function(){
-            if(input_passOld.value !=  passUser){
-                notification_passOld.innerHTML = "Mật khẩu nhập vào không đúng";
+        inputPassOld.onchange= function(){
+            if(inputPassOld.value !=  passUser){
+                notifyPassOld.innerHTML = "Mật khẩu nhập vào không đúng";
             }
             else{
-                notification_passOld.innerHTML = "";
+                notifyPassOld.innerHTML = "";
             }
         }
-        input_passNews.onchange = function(){
-            var meter = checkPass(input_passNews.value);
+        inputPassNew.onchange = function(){
+            var meter = checkPass(inputPassNew.value);
             meter_pass.value = meter;
             if(meter != 100){
-                notification_passNews.innerHTML = 'Mật khẩu phải lớn hơn 6 kí tự, bao gồm chữ cái in hoa, in thường, số và kí tự đặc biệt';
+                notifyPassNews.innerHTML = 'Mật khẩu phải lớn hơn 6 kí tự, bao gồm chữ cái in hoa, in thường, số và kí tự đặc biệt';
             }
             else{
                 check_rePass();
-                notification_passNews.innerHTML = '';
+                notifyPassNews.innerHTML = '';
             }
         }
-        input_rePassNews.onchange = check_rePass;
-        if(meter_pass.value == 100 && input_passOld.value ==  passUser && input_rePassNews.value == input_passNews.value){
+        inputRePassNews.onchange = check_rePass;
+        if(meter_pass.value == 100 && inputPassOld.value ==  passUser && inputRePassNews.value == inputPassNew.value){
             document.querySelector('.btn_changePass').removeAttribute('disabled');
         }
     }

@@ -1,5 +1,5 @@
   $(document).ready(function(){
-      $('.img_product').slick({
+      $('.img-product').slick({
           infinite: true,
           arrows: false,
           autoplay: true, 
@@ -8,7 +8,7 @@
       });
   });
 $(document).ready(function(){
-    $('.container__img').slick({
+    $('.container-img').slick({
         infinite: true,
         arrows: false,
         autoplay: true, 
@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $('.content__bottom--img').slick({
+    $('.content-bottom-img').slick({
         infinite: true,
         arrows: false,
         autoplay: true, 

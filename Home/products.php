@@ -57,7 +57,7 @@
                 <div class="rangePrice">
                     <div class="choose_rangePrice col-12">
                         <span>10,000</span>   
-                        <input type="range" id="input_rangePrice" min="10000" max="200000">
+                        <input type="range" id="inputRangePrice" min="10000" max="200000">
                         <span>200,000</span>
                     </div>
                     <p class="show_rangePrice">Giá : 0 VND &rarr; <span class='rangeShow_max'></span> VNĐ</p>
@@ -125,7 +125,7 @@
                         while($rowInfo_product = $result_product->fetch_assoc()){
                             echo "<div class='item_product'>";
                                 echo "<a class='details_product' href='./details.php?id={$rowInfo_product['id']}'>
-                                        <img src='../assets/img/img-sp/{$rowInfo_product['image']}' class='img_product'>
+                                        <img src='../assets/img/img-sp/{$rowInfo_product['image']}' class='img-product'>
                                     </a>";
                                 echo "<div class='content_product'>";
                                     echo "<h3 class='name_product'>{$rowInfo_product['name']}</h3>";

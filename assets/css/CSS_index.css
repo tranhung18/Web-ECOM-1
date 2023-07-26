@@ -1,4 +1,4 @@
-.container__img{
+.container-img{
     margin-top: -3px;
 }
 /* 4 Img */
@@ -82,11 +82,11 @@
     justify-content: center;
     align-items: center;
 }
-.content__bottom--img{
+.content-bottom-img{
     padding-right: 40px;
     border-right: 1px solid #888888;
 }
-.content__bottom--img img{
+.content-bottom-img img{
     width: 80%;
     border-radius: 15px;
     height: 350px;

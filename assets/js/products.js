@@ -6,7 +6,6 @@ function sleep(milliseconds) {
         }
     }
 }
-// định dạng tiền
 function formatCash(str) {
     return str.split('').reverse().reduce(
         (prev, next, index) => {
@@ -16,8 +15,8 @@ function formatCash(str) {
 }
 
 document.addEventListener("DOMContentLoaded",function(){
-    document.querySelector('#input_rangePrice').onchange = function(){
-        var priceRange = document.querySelector("#input_rangePrice").value;
+    document.querySelector('#inputRangePrice').onchange = function(){
+        var priceRange = document.querySelector("#inputRangePrice").value;
         window.location.href = './products.php?changePrice='+priceRange+'';            
     }
     const img_destinyProduct = document.querySelectorAll('.destiny_product');

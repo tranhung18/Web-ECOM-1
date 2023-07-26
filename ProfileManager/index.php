@@ -214,13 +214,13 @@
                 <h1 class='title_content'>Đổi mật khẩu</h1>
                 <form action="" class='form_changePass' style="width: 50%;" method='post'>
                     <input type="text" class='input_none' name='ID_userChangePass' value='<?php echo $ID_userPage; ?>'>
-                    <input type="password"  class='input_passOld' required placeholder='Nhập mật khẩu hiện tại'>
-                    <span class='span_checkPass'></span>
-                    <input type="password"  class='input_passNews' name='pass_news' required placeholder='Tạo mật khẩu mới'>
-                    <span class='span_passNews'></span>
+                    <input type="password"  class='input-pass-old' required placeholder='Nhập mật khẩu hiện tại'>
+                    <span class='span-check-pass'></span>
+                    <input type="password"  class='input-pass-news' name='pass_news' required placeholder='Tạo mật khẩu mới'>
+                    <span class='span-pass-news'></span>
                     <progress max="100" value="0" class="meter"></progress>
-                    <input type="password" class='input_re-passNews'  required placeholder='Nhập lại mật khẩu mới'>
-                    <span class='span_re-passNews'></span>
+                    <input type="password" class='input-repass-news'  required placeholder='Nhập lại mật khẩu mới'>
+                    <span class='span-repass-news'></span>
                     <input type="submit" class='btn_changePass' name='submit_changePassword' value='Đổi mật khẩu'>
                 </form>
             </div>
@@ -901,7 +901,7 @@
                                     <option value="Thổ">Thổ</option>
                                 </select>
                             </div>
-                            <input style='background-color: white' class ='img_product' type="file" required name='img_Product'>
+                            <input style='background-color: white' class ='img-product' type="file" required name='img_Product'>
                             <input style='width:50%' type="submit" class='btn_submitAdd addProduct btnFormProduct' name='submit_addProduct' value='Thêm sản phẩm'>
                         </form>
                         <a href='./index.php?id_active=3'><i style='font-size: 23px' class='fas fa-times icon_close'></i></a>
